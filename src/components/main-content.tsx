@@ -4,8 +4,9 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { useTranslations } from 'next-intl'
 
-const MotionButton = motion(Button)
+const MotionButton = motion.create(Button)
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -23,6 +24,9 @@ const staggerChildren = {
 
 export function MainContent() {
   const [isHovered, setIsHovered] = useState(false)
+  const t = useTranslations('MainContent')
+
+  const aboutItems = [1, 2, 3, 4, 5].map(num => t(`aboutSection.item${num}`))
 
   return (
     <main className="container mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -36,51 +40,45 @@ export function MainContent() {
           className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600"
           variants={fadeIn}
         >
-          文浩Free
+          {t('name')}
         </motion.h1>
         <motion.h2 
           className="text-2xl text-purple-600 font-light"
           variants={fadeIn}
         >
-          热爱技术，热爱生活的开发者
+          {t('subtitle')}
         </motion.h2>
         <motion.p 
           className="text-gray-600 text-lg"
           variants={fadeIn}
         >
-          你好，欢迎来到我的个人空间！
+          {t('welcome')}
         </motion.p>
         <motion.p 
           className="text-gray-600"
           variants={fadeIn}
         >
-          我是文浩Free，一名充满热情的全栈开发工程师，现居中国。
+          {t('introduction')}
         </motion.p>
         <motion.p 
           className="text-gray-600"
           variants={fadeIn}
         >
-          在这里，你可以了解我的技术栈、项目经历，以及对技术和生活的思考。
+          {t('description1')}
         </motion.p>
         <motion.p 
           className="text-gray-600"
           variants={fadeIn}
         >
-          这个网站不仅是我的个人名片，也是记录我成长和思考的数字空间。
+          {t('description2')}
         </motion.p>
         
         <motion.div 
           className="space-y-3"
           variants={fadeIn}
         >
-          <h3 className="text-lg font-medium">关于这个空间：</h3>
-          {[
-            "技术分享与经验总结",
-            "个人项目展示",
-            "生活随笔与思考",
-            "持续学习与成长记录",
-            "开源项目贡献"
-          ].map((item, index) => (
+          <h3 className="text-lg font-medium">{t('aboutSection.title')}</h3>
+          {aboutItems.map((item, index) => (
             <motion.div 
               key={item} 
               className="flex items-center gap-2"
@@ -103,7 +101,7 @@ export function MainContent() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            OK，知道了
+            {t('button')}
           </MotionButton>
         </motion.div>
       </motion.div>

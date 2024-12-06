@@ -1,0 +1,43 @@
+{
+    "HomePage": {
+        "title": "你好，世界！",
+        "about": "前往关于页面"
+    },
+    "Header": {
+        "name": "文浩Free",
+        "blog": "博客",
+        "projects": "项目",
+        "tech": "技术",
+        "about": "关于",
+        "language": {
+            "en": "英文",
+            "zh": "中文",
+            "switch": "切换语言"
+        }
+    },
+    "MainContent": {
+        "name": "文浩Free",
+        "subtitle": "热爱技术，热爱生活的开发者",
+        "welcome": "你好，欢迎来到我的个人空间！",
+        "introduction": "我是文浩Free，一名充满热情的全栈开发工程师，现居中国。",
+        "description1": "在这里，你可以了解我的技术栈、项目经历，以及对技术和生活的思考。",
+        "description2": "这个网站不仅是我的个人名片，也是记录我成长和思考的数字空间。",
+        "aboutSection": {
+            "title": "关于这个空间：",
+            "item1": "技术分享与经验总结",
+            "item2": "个人项目展示",
+            "item3": "生活随笔与思考",
+            "item4": "持续学习与成长记录",
+            "item5": "开源项目贡献"
+        },
+        "button": "OK，知道了"
+    },
+    "SocialContact": {
+        "title": "保持联系",
+        "links": {
+            "github": "GitHub",
+            "twitter": "Twitter",
+            "email": "邮箱"
+        }
+    }
+}

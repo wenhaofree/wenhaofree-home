@@ -1,0 +1,43 @@
+{
+    "HomePage": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Header": {
+        "name": "WenhaoFree",
+        "blog": "Blog",
+        "projects": "Projects",
+        "tech": "Tech",
+        "about": "About",
+        "language": {
+            "en": "English",
+            "zh": "Chinese",
+            "switch": "Switch language"
+        }
+    },
+    "MainContent": {
+        "name": "WenhaoFree",
+        "subtitle": "Developer who loves technology and life",
+        "welcome": "Hello, welcome to my personal space!",
+        "introduction": "I'm WenhaoFree, a passionate full-stack developer based in China.",
+        "description1": "Here, you can learn about my tech stack, project experience, and thoughts on technology and life.",
+        "description2": "This website is not just my personal card, but also a digital space to record my growth and thoughts.",
+        "aboutSection": {
+            "title": "About this space:",
+            "item1": "Tech sharing and experience summary",
+            "item2": "Personal project showcase",
+            "item3": "Life essays and thoughts",
+            "item4": "Continuous learning and growth records",
+            "item5": "Open source contributions"
+        },
+        "button": "OK, got it"
+    },
+    "SocialContact": {
+        "title": "Stay Connected",
+        "links": {
+            "github": "GitHub",
+            "twitter": "Twitter",
+            "email": "Email"
+        }
+    }
+}

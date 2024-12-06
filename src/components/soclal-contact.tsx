@@ -3,11 +3,12 @@
 import { motion } from "framer-motion"
 import { Github, Twitter, Mail } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { useTranslations } from 'next-intl'
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, url: "https://github.com/wenhaofree" },
-  { name: "Twitter", icon: Twitter, url: "https://twitter.com/wenhaofree" },
-  { name: "Email", icon: Mail, url: "mailto:fuwenhao945@gmail.com" },
+  { key: "github", icon: Github, url: "https://github.com/wenhaofree" },
+  { key: "twitter", icon: Twitter, url: "https://twitter.com/wenhaofree" },
+  { key: "email", icon: Mail, url: "mailto:fuwenhao945@gmail.com" },
 ]
 
 const containerVariants = {
@@ -29,6 +30,8 @@ const itemVariants = {
 }
 
 export function SocialContact() {
+  const t = useTranslations('SocialContact')
+
   return (
     <section className="py-16 bg-gradient-to-b from-white to-purple-50">
       <div className="container mx-auto px-4">
@@ -38,7 +41,7 @@ export function SocialContact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          保持联系
+          {t('title')}
         </motion.h2>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
@@ -47,7 +50,7 @@ export function SocialContact() {
           animate="visible"
         >
           {socialLinks.map((link) => (
-            <motion.div key={link.name} variants={itemVariants}>
+            <motion.div key={link.key} variants={itemVariants}>
               <Button
                 variant="outline"
                 className="w-full py-6 flex items-center justify-center space-x-2 text-purple-600 hover:text-white hover:bg-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
@@ -55,7 +58,7 @@ export function SocialContact() {
               >
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
                   <link.icon className="w-6 h-6 mr-2" />
-                  <span>{link.name}</span>
+                  <span>{t(`links.${link.key}`)}</span>
                 </a>
               </Button>
             </motion.div>
