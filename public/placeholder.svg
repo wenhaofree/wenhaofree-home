@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+    <!-- 背景 -->
+    <rect width="1200" height="900" fill="#f8f9fa"/>
+    
+    <!-- 标题 -->
+    <text x="600" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">个人成长身份建设框架 - 横向全景图</text>
+    
+    <!-- 左侧：身份定位 -->
+    <rect x="50" y="80" width="300" height="780" fill="#e3f2fd" rx="10"/>
+    <text x="200" y="110" text-anchor="middle" font-size="20" font-weight="bold" fill="#1565c0">核心身份</text>
+    
+    <!-- 中间：行为养成 -->
+    <rect x="400" y="80" width="400" height="780" fill="#e8f5e9" rx="10"/>
+    <text x="600" y="110" text-anchor="middle" font-size="20" font-weight="bold" fill="#2e7d32">日常行为系统</text>
+    
+    <!-- 右侧：目标愿景 -->
+    <rect x="850" y="80" width="300" height="780" fill="#fff3e0" rx="10"/>
+    <text x="1000" y="110" text-anchor="middle" font-size="20" font-weight="bold" fill="#ef6c00">目标成果</text>
+    
+    <!-- 身份内容 -->
+    <text x="70" y="150" font-size="16" fill="#1565c0">
+        <tspan x="70" dy="20">1. 独立开发者</tspan>
+        <tspan x="90" dy="25">• 技术探索者</tspan>
+        <tspan x="90" dy="20">• 工程效率专家</tspan>
+        <tspan x="90" dy="20">• 产品思维实践者</tspan>
+        <tspan x="90" dy="20">• 技术创新推动者</tspan>
+        
+        <tspan x="70" dy="35">2. 自媒体工作者</tspan>
+        <tspan x="90" dy="25">• 知识萃取者</tspan>
+        <tspan x="90" dy="20">• 观点输出者</tspan>
+        <tspan x="90" dy="20">• 技术布道师</tspan>
+        <tspan x="90" dy="20">• 社群运营者</tspan>
+        
+        <tspan x="70" dy="35">3. 一人公司创始人</tspan>
+        <tspan x="90" dy="25">• 商业机会洞察者</tspan>
+        <tspan x="90" dy="20">• 品牌建设者</tspan>
+        <tspan x="90" dy="20">• 资源整合者</tspan>
+        <tspan x="90" dy="20">• 商业模式设计师</tspan>
+        
+        <tspan x="70" dy="35">4. 投资理财者</tspan>
+        <tspan x="90" dy="25">• 价值投资者</tspan>
+        <tspan x="90" dy="20">• 风险管理者</tspan>
+        <tspan x="90" dy="20">• 市场研究者</tspan>
+        <tspan x="90" dy="20">• 资产配置专家</tspan>
+        
+        <tspan x="70" dy="35">5. 终身学习者</tspan>
+        <tspan x="90" dy="25">• 知识探索者</tspan>
+        <tspan x="90" dy="20">• 跨界思考者</tspan>
+        <tspan x="90" dy="20">• 方法论实践者</tspan>
+        <tspan x="90" dy="20">• 复盘总结者</tspan>
+    </text>
+    
+    <!-- 行为内容 -->
+    <text x="420" y="150" font-size="16" fill="#2e7d32">
+        <tspan x="420" dy="20">1. 早晨routine（2小时）</tspan>
+        <tspan x="440" dy="25">• 6:00-6:30 晨间冥想与计划</tspan>
+        <tspan x="440" dy="20">• 6:30-7:30 核心技能学习</tspan>
+        <tspan x="440" dy="20">• 7:30-8:00 市场分析</tspan>
+        
+        <tspan x="420" dy="35">2. 上午专注时间（4小时）</tspan>
+        <tspan x="440" dy="25">• 8:30-10:30 产品开发</tspan>
+        <tspan x="440" dy="20">• 10:30-11:00 投资组合检查</tspan>
+        <tspan x="440" dy="20">• 11:00-12:30 技术攻关</tspan>
+        
+        <tspan x="420" dy="35">3. 下午创作与投资（4小时）</tspan>
+        <tspan x="440" dy="25">• 14:00-15:30 内容生产</tspan>
+        <tspan x="440" dy="20">• 15:30-16:00 社群运营</tspan>
+        <tspan x="440" dy="20">• 16:00-17:00 投资研究</tspan>
+        <tspan x="440" dy="20">• 17:00-18:00 项目迭代</tspan>
+        
+        <tspan x="420" dy="35">4. 晚间复盘（2小时）</tspan>
+        <tspan x="440" dy="25">• 20:00-21:00 数据分析</tspan>
+        <tspan x="440" dy="20">• 21:00-22:00 投资总结与计划</tspan>
+        
+        <tspan x="420" dy="35">5. 周期性任务</tspan>
+        <tspan x="440" dy="25">• 周一产品与投资周会</tspan>
+        <tspan x="440" dy="20">• 周三技术分享</tspan>
+        <tspan x="440" dy="20">• 周五投资组合调整</tspan>
+        <tspan x="440" dy="20">• 月度资产配置检查</tspan>
+        <tspan x="440" dy="20">• 季度投资策略复盘</tspan>
+    </text>
+    
+    <!-- 目标内容 -->
+    <text x="870" y="150" font-size="16" fill="#ef6c00">
+        <tspan x="870" dy="20">1. 技术成果</tspan>
+        <tspan x="890" dy="25">• 核心产品MAU达到10万</tspan>
+        <tspan x="890" dy="20">• 技术专利申请3项</tspan>
+        <tspan x="890" dy="20">• 开源项目Star过万</tspan>
+        
+        <tspan x="870" dy="35">2. 内容影响力</tspan>
+        <tspan x="890" dy="25">• 粉丝数突破20万</tspan>
+        <tspan x="890" dy="20">• 月度内容阅读100万</tspan>
+        <tspan x="890" dy="20">• 出版技术专著</tspan>
+        
+        <tspan x="870" dy="35">3. 商业成就</tspan>
+        <tspan x="890" dy="25">• 年收入突破200万</tspan>
+        <tspan x="890" dy="20">• 建立3个收入来源</tspan>
+        <tspan x="890" dy="20">• 品牌估值达千万</tspan>
+        
+        <tspan x="870" dy="35">4. 投资理财</tspan>
+        <tspan x="890" dy="25">• 投资组合年化收益15%+</tspan>
+        <tspan x="890" dy="20">• 被动收入占比达40%</tspan>
+        <tspan x="890" dy="20">• 总资产突破1000万</tspan>
+        <tspan x="890" dy="20">• 建立4大类资产配置</tspan>
+        
+        <tspan x="870" dy="35">5. 个人成长</tspan>
+        <tspan x="890" dy="25">• 掌握3个新技术领域</tspan>
+        <tspan x="890" dy="20">• 建立个人投资体系</tspan>
+        <tspan x="890" dy="20">• 完成2个创新项目</tspan>
+    </text>
+</svg>
