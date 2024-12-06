@@ -121,6 +121,7 @@ export function MainContent() {
         >
           <Image
             src="/placeholder.jpg?height=600&width=600"
+            // src="/CalmCloud.gif?height=800&width=800"
             alt="3D Avatar"
             width={600}
             height={600}
