@@ -33,34 +33,68 @@ export function SocialContact() {
   const t = useTranslations('SocialContact')
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-purple-50">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-3xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600"
+    <section className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
+      <div className="container mx-auto max-w-3xl text-center">
+        <motion.p
+          className="text-purple-600 mb-4 italic"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {t('title')}
+          {t('available')}
+        </motion.p>
+
+        <motion.h2
+          className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          {t('letsConnect')}
         </motion.h2>
+
+        <motion.p
+          className="text-gray-600 mb-12 text-lg"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          {t('description')}
+        </motion.p>
+
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mb-24"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <Button
+            variant="outline"
+            className="px-8 py-4 text-lg border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white transition-all duration-300"
+            asChild
+          >
+            <a href="mailto:fuwenhao945@gmail.com">
+              {t('contactButton')} <span className="ml-2">→</span>
+            </a>
+          </Button>
+        </motion.div>
+
+        <motion.div
+          className="flex justify-center space-x-12"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {socialLinks.map((link) => (
             <motion.div key={link.key} variants={itemVariants}>
-              <Button
-                variant="outline"
-                className="w-full py-6 flex items-center justify-center space-x-2 text-purple-600 hover:text-white hover:bg-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                asChild
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-purple-600 transition-colors duration-300"
               >
-                <a href={link.url} target="_blank" rel="noopener noreferrer">
-                  <link.icon className="w-6 h-6 mr-2" />
-                  <span>{t(`links.${link.key}`)}</span>
-                </a>
-              </Button>
+                <link.icon className="w-10 h-10" />
+              </a>
             </motion.div>
           ))}
         </motion.div>

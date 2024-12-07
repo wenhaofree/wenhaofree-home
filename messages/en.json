@@ -34,6 +34,10 @@
     },
     "SocialContact": {
         "title": "Stay Connected",
+        "available": "I'm available",
+        "letsConnect": "Let's Connect",
+        "description": "Feel free to contact me. I'm available for new projects or brand partnerships.",
+        "contactButton": "Contact Me",
         "links": {
             "github": "GitHub",
             "twitter": "Twitter",

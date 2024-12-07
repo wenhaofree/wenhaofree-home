@@ -34,6 +34,10 @@
     },
     "SocialContact": {
         "title": "保持联系",
+        "available": "我在这里",
+        "letsConnect": "让我们连接",
+        "description": "随时联系我。我可以接受新项目或品牌合作。",
+        "contactButton": "联系我",
         "links": {
             "github": "GitHub",
             "twitter": "Twitter",
